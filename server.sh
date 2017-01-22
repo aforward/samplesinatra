@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bundle exec ruby server.rb
+bundle exec thin start
 
