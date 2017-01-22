@@ -15,5 +15,9 @@ module SampleSinatra
       erb :'hello/world', :layout => :home
     end
 
+    not_found do
+      erb :error404
+    end    
+
   end
 end
