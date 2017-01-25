@@ -1,6 +1,10 @@
 
+$font: Helvetica, sans-serif;
 $medium-blue: #3498db;
+$light-grey: #ecf0f1;
 
 body {
+  color: $light-grey;
   background-color: $medium-blue;  
+  font-family: $font;
 }
