@@ -3,8 +3,32 @@ $font: Helvetica, sans-serif;
 $medium-blue: #3498db;
 $light-grey: #ecf0f1;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin btn($color, $bg) {
+  background-color: $bg;
+  color: $color;
+  @include border-radius(15 px);
+  &:hover {
+    cursor: pointer;
+    color: $bg;
+    background-color: $color;
+    @include border-radius(15 px);
+  }
+}
+
 body {
   color: $light-grey;
   background-color: $medium-blue;  
   font-family: $font;
 }
+
+button.btn {
+  @include btn($medium-blue, $light-grey);
+}
+

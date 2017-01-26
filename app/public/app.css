@@ -3,4 +3,20 @@ body {
   background-color: #3498db;
   font-family: Helvetica, sans-serif; }
 
+button.btn {
+  background-color: #ecf0f1;
+  color: #3498db;
+  -webkit-border-radius: 15 px;
+  -moz-border-radius: 15 px;
+  -ms-border-radius: 15 px;
+  border-radius: 15 px; }
+  button.btn:hover {
+    cursor: pointer;
+    color: #ecf0f1;
+    background-color: #3498db;
+    -webkit-border-radius: 15 px;
+    -moz-border-radius: 15 px;
+    -ms-border-radius: 15 px;
+    border-radius: 15 px; }
+
 /*# sourceMappingURL=app.css.map */
