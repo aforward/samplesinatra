@@ -1,29 +1,7 @@
 
-$font: Helvetica, sans-serif;
-$medium-blue: #3498db;
-$dark-blue: #2c3e50;
-$light-grey: #ecf0f1;
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
-@mixin btn($color, $bg) {
-  background-color: $bg;
-  color: $color;
-  padding: 5px 20px;
-  text-decoration: none;
-  @include border-radius(5px);
-  &:hover {
-    cursor: pointer;
-    color: $bg;
-    background-color: $color;
-    @include border-radius(5px);
-  }
-}
+@import 'variables';
+@import 'mixins';
+@import 'nav';
 
 body {
   color: $light-grey;
@@ -34,22 +12,4 @@ body {
 button.btn {
   @include btn($medium-blue, $light-grey);
 }
-
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li { display: inline-block; }
-
-  a {
-    @include btn($light-grey, $dark-blue);
-  }
-}
-
-
-
-
 

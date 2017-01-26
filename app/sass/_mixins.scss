@@ -1,0 +1,20 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin btn($color, $bg) {
+  background-color: $bg;
+  color: $color;
+  padding: 5px 20px;
+  text-decoration: none;
+  @include border-radius(5px);
+  &:hover {
+    cursor: pointer;
+    color: $bg;
+    background-color: $color;
+    @include border-radius(5px);
+  }
+}
