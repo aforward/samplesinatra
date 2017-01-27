@@ -15,6 +15,11 @@ module SampleSinatra
       erb :'hello/world', :layout => :home
     end
 
+    get '/article' do
+      @view = {title: "Lorem Ipsum"}
+      erb :'article'
+    end
+
     not_found do
       erb :error404
     end    
