@@ -1,0 +1,25 @@
+.alert {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  margin: 10px 0 10px 0;
+}
+
+.success {
+  @extend .alert;
+  border-color: $green;
+  background-color: $green;
+}
+
+.error {
+  @extend .alert;
+  color: $light-grey;
+  border-color: $red;
+  background-color: $red;
+}
+
+.warning {
+  @extend .alert;
+  border-color: $yellow;
+  background-color: $yellow;
+}

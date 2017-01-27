@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'nav';
+@import 'alert';
 
 body {
   color: $light-grey;
@@ -13,3 +14,15 @@ button.btn {
   @include btn($medium-blue, $light-grey);
 }
 
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+  background-color: $dark-blue;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+  background-color: $light-grey;
+}
