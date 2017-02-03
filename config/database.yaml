@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: samplesinatra_dev
+  pool: 2
+  username: postgres
+  password: 
