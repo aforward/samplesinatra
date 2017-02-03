@@ -1,9 +1,11 @@
 require 'sinatra'
 require 'message'
+require 'action'
 
 module SampleSinatra
 
   class App < Sinatra::Base
+    register Sinatra::ActiveRecordExtension
 
     get '/' do
       @view = {title: Message.hello, h1: "Welcome to ERB"}

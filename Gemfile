@@ -2,5 +2,10 @@ source 'https://rubygems.org'
 gem 'rspec'
 gem 'thin'
 gem 'sass'
-gem 'sinatra', :github => "sinatra/sinatra"
-
+gem 'sinatra', git: 'https://github.com/sinatra/sinatra.git'
+gem 'sinatra-contrib'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'rake'
+gem 'pg'
+gem 'sqlite3'
